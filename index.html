@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ResumeIQ – AI-powered resume analyzer. Get instant, structured feedback and land more interviews." />
+  <title>ResumeIQ — AI Resume Analyzer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo" id="logo-link">
+      <div class="logo-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+      </div>
+      <span>ResumeIQ</span>
+    </a>
+    <div class="nav-links">
+      <a href="#" class="nav-link">Features</a>
+      <a href="#" class="nav-link">Pricing</a>
+      <a href="#" class="nav-link">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-track">
+          <span class="theme-thumb"></span>
+        </span>
+        <svg class="sun-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="moon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <span class="theme-label">Light</span>
+      </button>
+      <button class="btn btn-ghost">Sign in</button>
+      <button class="btn btn-primary" id="nav-cta">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-blobs">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  </div>
+  <div class="container hero-grid">
+    <!-- Left -->
+    <div class="hero-left">
+      <div class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Powered by Advanced AI
+      </div>
+      <h1 class="hero-title">Analyze Your Resume.<br><span class="grad-text">Get Job-Ready</span> Instantly.</h1>
+      <p class="hero-sub">AI-powered feedback to improve your resume in seconds. Stand out from the crowd with data-driven insights.</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary btn-lg" id="hero-cta">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Upload Resume
+        </button>
+        <button class="btn btn-ghost btn-lg">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          Watch Demo
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">50K+</span><span class="stat-l">Resumes Analyzed</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">94%</span><span class="stat-l">User Satisfaction</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">3x</span><span class="stat-l">More Interviews</span></div>
+      </div>
+    </div>
+    <!-- Right: Visual Card -->
+    <div class="hero-right">
+      <div class="hero-card main-visual">
+        <div class="vc-header">
+          <div class="avatars">
+            <div class="av av1"></div><div class="av av2"></div><div class="av av3"></div>
+          </div>
+          <span class="ai-pill">AI Analyzing…</span>
+        </div>
+        <div class="score-donut">
+          <svg viewBox="0 0 140 140" width="140" height="140">
+            <circle cx="70" cy="70" r="56" fill="none" stroke="var(--border)" stroke-width="10"/>
+            <circle cx="70" cy="70" r="56" fill="none" stroke="url(#hGrad)" stroke-width="10"
+              stroke-dasharray="351.9" stroke-dashoffset="351.9"
+              stroke-linecap="round" transform="rotate(-90 70 70)" class="hero-arc"/>
+            <defs>
+              <linearGradient id="hGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#a78bfa"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="score-label"><span class="score-big">78</span><span class="score-small">/100</span></div>
+        </div>
+        <div class="mini-bars">
+          <div class="mbar-row"><span>Skills</span><div class="mbar"><div class="mbar-fill" style="--w:85%"></div></div><span class="mbar-val">85</span></div>
+          <div class="mbar-row"><span>Experience</span><div class="mbar"><div class="mbar-fill" style="--w:72%"></div></div><span class="mbar-val">72</span></div>
+          <div class="mbar-row"><span>Projects</span><div class="mbar"><div class="mbar-fill" style="--w:65%"></div></div><span class="mbar-val">65</span></div>
+        </div>
+      </div>
+      <div class="hero-card float-card fc-suggest">
+        <span>💡</span>
+        <div><div class="fc-t">Add measurable achievements</div><div class="fc-s">Quantify your impact</div></div>
+      </div>
+      <div class="hero-card float-card fc-ats">
+        <span class="ats-check">✅</span>
+        <div><div class="fc-t">ATS Compatible</div><div class="ats-mini-bar"><div class="ats-mini-fill"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ UPLOAD ═══════════════ -->
+<section class="upload-section" id="upload-section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Start Your Analysis</h2>
+      <p class="section-sub">Upload your resume and get instant AI-powered feedback</p>
+    </div>
+    <div class="drop-zone" id="drop-zone" tabindex="0" role="button" aria-label="Upload resume">
+      <input type="file" id="file-input" accept=".pdf,.docx,.doc" hidden />
+      <div class="dz-idle" id="dz-idle">
+        <div class="dz-icon-wrap"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+        <p class="dz-title">Drag &amp; drop your resume here</p>
+        <p class="dz-or">or <span class="dz-link" id="browse-link">browse files</span></p>
+        <div class="format-tags"><span class="fmt">PDF</span><span class="fmt">DOCX</span><span class="fmt">DOC</span></div>
+        <p class="dz-hint">Max file size: 10 MB</p>
+      </div>
+      <div class="dz-hover" id="dz-hover">
+        <div class="dz-icon-wrap pulse"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+        <p class="dz-title">Release to analyze!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ UPLOADING ═══════════════ -->
+<section class="process-section hidden" id="uploading-section">
+  <div class="container">
+    <div class="process-card">
+      <div class="file-row">
+        <div class="file-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div class="file-meta"><div class="file-name" id="file-name-disp">resume.pdf</div><div class="file-size" id="file-size-disp">—</div></div>
+        <div class="file-spin"></div>
+      </div>
+      <div class="prog-wrap">
+        <div class="prog-labels"><span id="prog-label">Uploading…</span><span id="prog-pct">0%</span></div>
+        <div class="prog-track"><div class="prog-fill" id="prog-fill"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ANALYZING ═══════════════ -->
+<section class="process-section hidden" id="analyzing-section">
+  <div class="container">
+    <div class="process-card analyzing-card">
+      <div class="ai-orb">
+        <div class="orb-ring r1"></div><div class="orb-ring r2"></div><div class="orb-ring r3"></div>
+        <div class="orb-core"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12C2 6.48 6.48 2 12 2"/><path d="M8 12h8M12 8v8"/></svg></div>
+      </div>
+      <h3 class="an-title">Analyzing with AI…</h3>
+      <p class="an-sub">Scanning your resume for improvements across all sections</p>
+      <div class="an-steps">
+        <div class="an-step" id="step-1"><div class="step-dot"></div><span>Parsing document structure</span></div>
+        <div class="an-step" id="step-2"><div class="step-dot"></div><span>Evaluating section content</span></div>
+        <div class="an-step" id="step-3"><div class="step-dot"></div><span>Checking ATS compatibility</span></div>
+        <div class="an-step" id="step-4"><div class="step-dot"></div><span>Generating suggestions</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ DASHBOARD ═══════════════ -->
+<section class="dashboard hidden" id="dashboard">
+  <div class="container-wide">
+    <!-- Dash Header -->
+    <div class="dash-header">
+      <div>
+        <h2 class="dash-title">Analysis Complete</h2>
+        <p class="dash-sub">Here's your detailed breakdown and personalized improvement plan</p>
+      </div>
+      <div class="dash-header-actions">
+        <button class="btn btn-outline" id="re-analyze-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>Re-analyze
+        </button>
+        <button class="btn btn-primary" id="download-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Improved Resume
+        </button>
+      </div>
+    </div>
+
+    <div class="dash-layout">
+      <!-- Sidebar -->
+      <aside class="dash-sidebar">
+        <div class="card score-card">
+          <div class="card-label">Resume Score</div>
+          <div class="score-wrap">
+            <div class="score-donut-dash">
+              <svg viewBox="0 0 160 160" width="160" height="160">
+                <circle cx="80" cy="80" r="66" fill="none" stroke="var(--border)" stroke-width="12"/>
+                <circle cx="80" cy="80" r="66" fill="none" stroke="url(#dGrad)" stroke-width="12"
+                  stroke-dasharray="414.7" stroke-dashoffset="414.7"
+                  stroke-linecap="round" transform="rotate(-90 80 80)" id="dash-arc"/>
+                <defs>
+                  <linearGradient id="dGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#a78bfa"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="score-center-dash">
+                <span class="score-num-dash" id="score-num">0</span>
+                <span class="score-den-dash">/ 100</span>
+              </div>
+            </div>
+            <div class="score-grade" id="score-grade">—</div>
+          </div>
+          <div class="score-tip">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            Score improves as you apply suggestions
+          </div>
+        </div>
+
+        <div class="card sections-card">
+          <div class="card-label">Section Breakdown</div>
+          <div id="sections-list"></div>
+        </div>
+
+        <div class="card ats-card">
+          <div class="ats-row">
+            <div class="ats-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+            </div>
+            <div><div class="ats-lbl">ATS Compatible</div><div class="ats-score-lbl">Score: 82/100</div></div>
+            <span class="badge good">Good</span>
+          </div>
+          <div class="prog-track thin"><div class="prog-fill gradient" style="width:82%"></div></div>
+          <p class="ats-desc">Your resume passes most ATS filters. A few keyword additions can boost this score significantly.</p>
+        </div>
+      </aside>
+
+      <!-- Main Panel -->
+      <div class="dash-main">
+        <div class="tab-bar">
+          <button class="tab active" data-tab="suggestions" id="tab-suggestions">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>AI Suggestions
+          </button>
+          <button class="tab" data-tab="keywords" id="tab-keywords">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Keyword Optimizer
+          </button>
+          <button class="tab" data-tab="preview" id="tab-preview">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Resume Preview
+          </button>
+        </div>
+
+        <!-- Tab: Suggestions -->
+        <div class="tab-pane active" id="pane-suggestions">
+          <div class="suggestions-grid" id="suggestions-grid"></div>
+        </div>
+
+        <!-- Tab: Keywords -->
+        <div class="tab-pane hidden" id="pane-keywords">
+          <div class="kw-panel">
+            <div class="kw-header">
+              <div class="kw-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></div>
+              <div><h3 class="kw-title">ATS Keyword Analysis</h3><p class="kw-sub">Optimize for Applicant Tracking Systems</p></div>
+            </div>
+            <div class="kw-grid">
+              <div class="kw-box missing-box">
+                <div class="kw-box-hdr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>Missing Keywords</div>
+                <div class="kw-tags" id="missing-kws"></div>
+              </div>
+              <div class="kw-box suggested-box">
+                <div class="kw-box-hdr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>Suggested Additions</div>
+                <div class="kw-tags" id="suggested-kws"></div>
+              </div>
+            </div>
+            <div class="kw-tip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span><strong>Pro Tip:</strong> Naturally integrate 5-10 missing keywords into your experience and skills sections to boost ATS score by up to 30%.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Preview -->
+        <div class="tab-pane hidden" id="pane-preview">
+          <div class="preview-panel">
+            <div class="preview-col">
+              <div class="preview-lbl original-lbl"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Original Resume</div>
+              <div class="resume-mock">
+                <div class="rm-name">Alex Johnson</div>
+                <div class="rm-contact">alex@email.com · LinkedIn · GitHub</div>
+                <div class="rm-sec"><div class="rm-sec-title">Experience</div>
+                  <div class="rm-role">Software Developer — TechCorp (2021–Present)</div>
+                  <div class="rm-bullet">Worked on various projects and contributed to team goals.</div>
+                  <div class="rm-bullet">Made improvements to existing codebase.</div>
+                  <div class="rm-bullet">Collaborated with backend team on API integrations.</div>
+                </div>
+                <div class="rm-sec"><div class="rm-sec-title">Skills</div>
+                  <div class="rm-bullet">JavaScript, HTML, CSS, React, some Python</div>
+                </div>
+                <div class="rm-sec"><div class="rm-sec-title">Education</div>
+                  <div class="rm-bullet">B.Tech Computer Science — 2021</div>
+                </div>
+              </div>
+            </div>
+            <div class="preview-arrow">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+            <div class="preview-col">
+              <div class="preview-lbl improved-lbl"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>AI-Improved Resume</div>
+              <div class="resume-mock improved">
+                <div class="rm-name">Alex Johnson</div>
+                <div class="rm-contact">alex@email.com · LinkedIn · GitHub · Portfolio.dev</div>
+                <div class="rm-sec"><div class="rm-sec-title">Experience</div>
+                  <div class="rm-role">Software Developer — TechCorp (2021–Present)</div>
+                  <div class="rm-bullet highlight">Led development of 4 microservices handling 60K+ daily active users, improving reliability by 35%.</div>
+                  <div class="rm-bullet highlight">Reduced page load time by 42% through React lazy loading and bundle optimization techniques.</div>
+                  <div class="rm-bullet highlight">Designed and shipped 20+ RESTful APIs using Node.js and Express, integrated with PostgreSQL.</div>
+                </div>
+                <div class="rm-sec"><div class="rm-sec-title">Skills</div>
+                  <div class="rm-bullet highlight">JavaScript (ES6+), TypeScript, React.js, Node.js, Python, PostgreSQL, Docker, REST APIs, Git, AWS</div>
+                </div>
+                <div class="rm-sec"><div class="rm-sec-title">Education</div>
+                  <div class="rm-bullet">B.Tech Computer Science — CGPA: 8.9/10 — 2021</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="preview-actions">
+            <button class="btn btn-outline" id="edit-btn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Edit Resume</button>
+            <button class="btn btn-primary" id="dl-preview-btn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Improved Resume</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
